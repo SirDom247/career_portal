@@ -1,0 +1,31 @@
+ career_center/
+│
+├── app/
+│   ├── __init__.py               # Initialize Flask app and imports
+│   ├── models.py                 # Database models (User, JobPost, Resourceetc.)
+│   ├── routes.py                 # Main routes for handling requests
+│   ├── forms.py                  # Form classes for registration, login, etc.
+│   ├── utils.py                  # Utility functions like payment, OTP gener
+│   ├── templates/
+│   │   ├── base.html             # Base template with shared structure
+│   │   ├── index.html            # Homepage
+│   │   ├── register_beneficiary.html   # Beneficiary registration form
+│   │   ├── register_facilitator.html   # Facilitator registration form
+│   │   ├── post_job.html         # Form to post a job
+│   │   ├── create_event.html     # Event creation form
+│   │   ├── resources.html        # Resources page
+│   │   ├── job_listing.html      # Job listing page
+│   │   ├── admin_dashboard.html  # Admin dashboard page
+│   │   └── verify_otp.html       # OTP verification page
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── styles.css        # Custom CSS
+│   │   ├── js/
+│   │   │   └── scripts.js        # Custom JS for frontend interactions
+│   │   ├── images/               # Logos, images
+│   │   └── resources/            # Uploaded resources (ebooks, videos, etc.)
+│   └── config.py                 # Configurations like Paystack keys, secret keys
+│
+├── run.py                        # Entry point for running the Flask app
+├── requirements.txt              # List of Python dependencies
+└── Dockerfile                    # For containerizing the app with Docker
