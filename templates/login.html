@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Login</h2>
+<form method="POST" action="{{ url_for('main.login') }}">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+        {{ form.email.label }} {{ form.email(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.password.label }} {{ form.password(class="form-control") }}
+    </div>
+    <div class="form-group">
+        {{ form.submit(class="btn btn-primary") }}
+    </div>
+
+    <hr>
+    <p>Or login using Google:</p>
+    <a href="{{ url_for('main.google_login') }}" class="btn btn-danger">Login with Google</a>
+</form>
+{% endblock %}
